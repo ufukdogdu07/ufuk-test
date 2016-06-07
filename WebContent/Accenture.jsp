@@ -10,7 +10,7 @@
 	<table border="1" cellpadding="5" width="500">
 		<tr>
 			<td><img src="accenture.png" alt="Smiley face" height="42" width="42" style="width: 176px; height: 75px"></td>
-			<td>Ufuk Test444</td>
+			<td>Ufuk Test oldu</td>
 		</tr>
 
 	</table>
