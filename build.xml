@@ -4,7 +4,7 @@
               To include a user specific buildfile here, simply create one in the same
               directory with the processing instruction <?eclipse.ant.import?>
               as the first entry and export the buildfile again. -->
-<project basedir="." default="build" name="automation">
+<project basedir="." default="build-war" name="automation">
 	<property environment="env" />
 	<property name="ECLIPSE_HOME" value="../../eclipse/eclipse-3.6.2-x86" />
 	<property name="debuglevel" value="source,lines,vars" />
@@ -29,16 +29,7 @@
 	<target name="clean">
 		<delete dir="build/classes" />
 	</target>
-	<target depends="clean" name="cleanall" />
-	<target depends="build-subprojects,build-project,build-war" name="build" />
-	<target name="build-subprojects" />
-	<target depends="init" name="build-project">
-		<echo message="${ant.project.name}: ${ant.file}" />
-		<javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" source="${source}" target="${target}">
-			<src path="src" />
-			<classpath refid="automation.classpath" />
-		</javac>
-	</target>
+	<target depends="build-war" name="build" />
 	<target name="build-war">
 		<war destfile="ufuk.war">
 			<fileset dir="./WebContent">
