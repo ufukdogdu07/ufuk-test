@@ -1,0 +1,53 @@
+!SESSION 2016-06-07 06:35:17.184 -----------------------------------------------
+eclipse.buildId=M20110210-1200
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=tr_TR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -nl en
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.jee.product -nl en -data C:\Users\ufuk.dogdu\Documents\GitHub\ufuk-test
+
+!ENTRY org.eclipse.ui 2 0 2016-06-07 06:35:19.898
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-06-07 06:35:19.898
+!MESSAGE Could not parse key sequence: plug-in='org.eclipse.m2e.core.ui', id='org.eclipse.m2e.core.ui.command.addDependency', keySequence='Ctrl+Shift+D'
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-06-07 06:35:19.898
+!MESSAGE Could not parse key sequence: plug-in='org.eclipse.m2e.core.ui', id='org.eclipse.m2e.core.ui.command.addPlugin', keySequence='Ctrl+Shift+P'
+
+!ENTRY org.eclipse.jface 2 0 2016-06-07 06:35:28.151
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-06-07 06:35:28.151
+!MESSAGE A conflict occurred for CTRL+SHIFT+F9:
+Binding(CTRL+SHIFT+F9,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.checkin,Check-In,
+		Check-In,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		com.ibm.team.filesystem.ui.handlers.CommitHandler,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+F9,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.deactivateAllTasks,Deactivate Task,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-06-07 06:35:28.151
+!MESSAGE A conflict occurred for CTRL+SHIFT+F12:
+Binding(CTRL+SHIFT+F12,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.accept,Accept,
+		Accept,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		com.ibm.team.filesystem.ui.handlers.AcceptHandler,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+F12,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.searchForTask,Search Repository for Task,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.mylyn.internal.tasks.ui.search.SearchTaskHandler,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
